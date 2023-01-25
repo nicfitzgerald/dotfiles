@@ -1,0 +1,34 @@
+[user]
+  name = Nic Fitzgerald
+  email = nicholas.a.fitzgerald@gmail.com
+  username = nicfitzgerald
+[init]
+  defaultBranch = main
+[core]
+  editor = nvim
+  whitespace = fix,-indent-with-non-tab,trailing-space,cr-at-eol
+[web]
+  browser = firefox
+[color]
+  ui = true
+[color "branch"]
+  current = yellow reverse
+  local = yellow
+  remote = green
+[color "diff"]
+  meta = yellow bold
+  frag = magenta bold
+  old = red bold
+  new = green bold
+[color "status"]
+  added = yellow
+  changed = green
+  untracked = red
+[github]
+  user = nicfitzgerald
+[credential]
+	helper = cache
+[commit]
+	gpgsign = true
+[include]
+  path = ~/.gitconfig.secret
