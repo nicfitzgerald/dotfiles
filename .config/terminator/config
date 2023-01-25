@@ -1,0 +1,39 @@
+[global_config]
+  handle_size = 1
+  suppress_multiple_term_dialog = True
+[keybindings]
+  cycle_next = <Primary><Alt>n
+  split_horiz = <Primary><Alt>h
+  split_vert = <Primary><Alt>v
+  close_term = <Primary><Alt>w
+  paste = <Primary><Shift>v
+  edit_window_title = <Primary><Shift>w
+  edit_tab_title = <Primary><Alt>Up
+[profiles]
+  [[default]]
+    icon_bell = False
+    background_darkness = 0.75
+    cursor_color = "#aaaaaa"
+    font = FiraCode Nerd Font 11
+    show_titlebar = False
+    use_system_font = False
+    bold_is_bright = True
+    copy_on_selection = True
+  [[default non-nerd]]
+    background_darkness = 0.76
+    background_type = transparent
+    cursor_color = "#aaaaaa"
+    font = Fira Code 11
+    show_titlebar = False
+    use_system_font = False
+    copy_on_selection = True
+[layouts]
+  [[default]]
+    [[[window0]]]
+      type = Window
+      parent = ""
+    [[[child1]]]
+      type = Terminal
+      parent = window0
+      profile = default
+[plugins]
