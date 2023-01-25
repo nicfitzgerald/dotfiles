@@ -1,0 +1,60 @@
+# Aliases
+## Shortcuts
+### OS
+alias cls=clear
+alias dclean="sudo dnf clean all"
+alias dcheck="sudo dnf check-update"
+alias dup="sudo dnf up"
+alias dinstall="sudo dnf install"
+alias dremove="sudo dnf remove"
+alias dsearch="dnf search"
+alias dev="cd ~/dev"
+
+### Development
+#### JS
+alias yc="rm -rf node_modules yarn.lock && yarn cache clean && yarn cache clean --mirror"
+alias yd="yarn dev"
+
+#### Golang
+alias grun="go run ."
+alias gof="gofmt -l -s -w ."
+alias gcs="du -hs /home/nicfitzgerald/.cache/go-build"
+alias gocc="go clean --cache"
+
+## Software
+### Generic Software
+alias roku="rokuterm 192.168.1.20"
+alias exerc="exercism"
+alias ri="~/tooling/RedisInsight.AppImage"
+alias vim="nvim"
+
+### Containers
+alias docker="podman"
+alias rmi="docker rmi"
+alias rml="docker images"
+alias vag-status="vagrant global-status --prune"
+
+## Functions
+### Functions Shortcuts
+alias npmv='_getVer'
+alias npmva="_getAllVer"
+alias npmvc="_getCompatVersion"
+alias buildquote="_bq"
+
+### Function Bodies
+function _getVer(){
+  npm show $1@"*" version 
+}
+
+function _getAllVer() {
+  npm show $1 versions
+}
+
+function _getCompatVersion() {
+  npm show "${1}@^${2}" version
+}
+
+function _bq() {
+  cd ~/dev/fortunes
+  strfile -c % quotes quotes.dat
+}

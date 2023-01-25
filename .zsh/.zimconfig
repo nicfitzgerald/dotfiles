@@ -1,0 +1,18 @@
+# Zim configuration
+
+#zstyle ':zim:zmodule' use 'degit' # Use degit instead of git as the default tool to install and update modules.
+
+##  Module configuration
+### git
+#zstyle ':zim:git' aliases-prefix 'g' # Set a custom prefix for the generated aliases. The default prefix is 'G'
+
+## input
+### Append `../` to your input for each `.` you type after an initial `..`
+zstyle ':zim:input' double-dot-expand yes
+
+## termtitle
+zstyle ':zim:termtitle' format '\/%1~\/ - ${1}'
+zstyle ':zim:termtitle' hooks 'precmd' 'preexec'
+
+## zsh-autosuggestions
+ZSH_AUTOSUGGEST_MANUAL_REBIND=1

@@ -1,0 +1,25 @@
+# NPM
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+# Yarn path
+export PATH="$PATH:$HOME/.yarn/bin"
+
+# Fly.io
+export FLYCTL_INSTALL="/home/nicfitzgerald/.fly"
+export PATH="$FLYCTL_INSTALL/bin:$PATH"
+
+# Binary exports
+export PATH="/home/nicfitzgerald/tooling:$PATH"
+
+# VHS
+export PATH="/home/nicfitzgerald/tooling/vhs:$PATH"
+
+## Golang Env Vars and Path
+export GOPATH="$HOME/go"
+export GOBIN="$GOPATH/bin"
+export PATH="$PATH:/usr/local/go/bin:$GOPATH/bin"
+
+# GPG Signing
+export GPG_TTY=$(tty)

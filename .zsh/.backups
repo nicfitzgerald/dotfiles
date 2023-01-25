@@ -1,0 +1,12 @@
+# Flutter
+## Android SDK
+# export ANDROID_HOME="/home/nicfitzgerald/flutsdk/sdk"
+
+## Flutter Tools
+# export PATH="$HOME/flutsdk/sdk/cmdline-tools/latest/bin:$PATH"
+
+# Flutter binary
+# export PATH="$HOME/flutsdk/flutter/bin:$PATH"
+
+# Cargo/Rust
+# . "$HOME/.cargo/env"
