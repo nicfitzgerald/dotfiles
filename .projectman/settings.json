@@ -1,0 +1,20 @@
+{
+	"commandToOpen": "code",
+	"projects": [{
+			"path": "/home/nicfitzgerald/dev/js/coursework/fullstackreact/graphql",
+			"name": "graphql"
+		},
+		{
+			"path": "/home/nicfitzgerald/dev/projects/conduit/realworld_front",
+			"name": "cfront"
+		},
+		{
+			"path": "/home/nicfitzgerald/dev/projects/conduit/realworld_back",
+			"name": "cback"
+		},
+		{
+			"path": "/home/nicfitzgerald/dev/js/projects/portfolio-terminal",
+			"name": "portterm"
+		}
+	]
+}
